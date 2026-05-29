@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>HarvestFresh - Seasonal Fruit Gallery</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="/src/tailwind-config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Be+Vietnam+Pro:wght@400;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen">
+
+    <header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 bg-surface-bright/90 backdrop-blur-md max-w-container-max mx-auto shadow-[0px_4px_20px_rgba(255,122,0,0.08)]">
+        <div class="flex items-center gap-8">
+            <span class="text-headline-md font-headline-md font-extrabold text-primary">HarvestFresh</span>
+            <nav class="hidden md:flex gap-6">
+                <a class="text-primary border-b-2 border-primary pb-1 font-bold font-label-md transition-colors duration-200" href="#">Shop</a>
+                <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="#">Categories</a>
+                <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="#">Seasonal</a>
+                <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-200" href="#">About</a>
+            </nav>
+        </div>
+        <div class="flex items-center gap-6">
+            <div class="hidden lg:flex items-center bg-surface-container rounded-full px-4 py-2 border-[1.5px] border-outline-variant focus-within:border-primary-container transition-all">
+                <span class="material-symbols-outlined text-on-surface-variant mr-2">search</span>
+                <input class="bg-transparent border-none focus:ring-0 text-body-md w-64 placeholder-on-surface-variant" placeholder="Find fresh fruits..." type="text">
+            </div>
+            <div class="flex gap-4">
+                <button class="flex items-center justify-center p-2 rounded-full hover:bg-primary-container/10 transition-transform active:scale-95 duration-150">
+                    <span class="material-symbols-outlined text-primary">shopping_basket</span>
+                </button>
+                <button class="flex items-center justify-center p-2 rounded-full hover:bg-primary-container/10 transition-transform active:scale-95 duration-150">
+                    <span class="material-symbols-outlined text-primary">person</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-[100px] pb-stack-lg max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <section class="mb-stack-lg">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-gutter mb-stack-md">
+                <div class="space-y-2">
+                    <h1 class="text-display-lg font-headline-lg text-on-surface tracking-tight">Seasonal Harvest</h1>
+                    <p class="text-body-lg text-on-surface-variant max-w-xl">From our sun-drenched fields to your table. Experience the vibrant sweetness of fruit picked at its peak ripeness.</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-3 mb-stack-md">
+                <button class="px-6 py-2 rounded-full active-chip font-label-md shadow-sm transition-all hover:shadow-md">All</button>
+                <button class="px-6 py-2 rounded-full bg-secondary-container/10 text-secondary font-label-md border-transparent hover:bg-secondary-container/20 transition-all">Citrus</button>
+                <button class="px-6 py-2 rounded-full bg-secondary-container/10 text-secondary font-label-md border-transparent hover:bg-secondary-container/20 transition-all">Tropical</button>
+                <button class="px-6 py-2 rounded-full bg-secondary-container/10 text-secondary font-label-md border-transparent hover:bg-secondary-container/20 transition-all">Berries</button>
+                <button class="px-6 py-2 rounded-full bg-secondary-container/10 text-secondary font-label-md border-transparent hover:bg-secondary-container/20 transition-all">Stone Fruit</button>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+            <div class="group bg-surface-container-lowest rounded-xl p-stack-sm shadow-[0px_4px_20px_rgba(255,122,0,0.08)] hover:shadow-[0px_8px_30px_rgba(255,122,0,0.15)] transition-all duration-300">
+                <div class="relative overflow-hidden rounded-lg aspect-square mb-4">
+                    <img class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105" alt="Premium ripe Alphonso mangoes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm-lio-QHvnIIKubrvFRV9iDEBio2gbbpxCAjN6mq6qR9TBaVI06e-wFB_Wwjl6oTUZLCECxr2WnAFHMqM4_O8F4RSQtClTaFz4BI1QIOElRZhssUB1WJNX1T-m0Zq0sFymZWyxOrZwU-ihkvvO_4KcYTmoiJOWVY740murOT3m-muVdAiO4O3mnQHItroHJgBmujIQl00OeEih1eiwjKf4ntnKdPGC2VijOpt5YMlLCtiNN9_-KlPXdEgNfKWaxFU6MRZjYgOvg">
+                    <div class="absolute top-2 left-2 bg-secondary-container px-3 py-1 rounded-full flex items-center gap-1">
+                        <span class="material-symbols-outlined text-[14px] text-on-secondary-container">eco</span>
+                        <span class="text-label-sm text-on-secondary-container">Premium</span>
+                    </div>
+                </div>
+                <div class="px-2 pb-2">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="text-headline-md font-headline-md text-on-surface">Honey Mango</h3>
+                        <span class="text-headline-md font-bold text-primary">$4.99</span>
+                    </div>
+                    <p class="text-body-md text-on-surface-variant mb-4">Buttery texture, intense sweetness.</p>
+                    <button class="w-full bg-primary-container text-on-primary font-label-md py-3 rounded-full flex items-center justify-center gap-2 hover:bg-primary transition-colors active:scale-95 duration-150">
+                        <span class="material-symbols-outlined">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="group bg-surface-container-lowest rounded-xl p-stack-sm shadow-[0px_4px_20px_rgba(255,122,0,0.08)] hover:shadow-[0px_8px_30px_rgba(255,122,0,0.15)] transition-all duration-300">
+                <div class="relative overflow-hidden rounded-lg aspect-square mb-4">
+                    <img class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105" alt="Sliced pink dragon fruit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-CifglF8o7N4LBvggnX0P_ZXC93obMftr4Mq8SM5b2Ud-q5c3RfZbyDUy6AGUzPE5mY0oqkJNzR_dr7e3X0vacmyCKbWY9hGnF36s0VtE8sljBW7QV7QoCpKx58Jfma6KHAcmXmM1yho5-2P8TE7sXDux_uS-7gseoRwweMOdu9e8lsLayoQkPTSxdIUy5FcCf1PAfnTtkdKx9ZfbHzijSxGAvJT3t-82O78qrpYBWaOEzBa7D1k9ojPIFEg-0WFZhro7pZAPCg">
+                    <div class="absolute top-2 left-2 bg-tertiary-container/20 text-tertiary px-3 py-1 rounded-full flex items-center gap-1 backdrop-blur-md">
+                        <span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+                        <span class="text-label-sm font-bold">Tropical Exotic</span>
+                    </div>
+                </div>
+                <div class="px-2 pb-2">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="text-headline-md font-headline-md text-on-surface">Pitaya Pink</h3>
+                        <span class="text-headline-md font-bold text-primary">$6.50</span>
+                    </div>
+                    <p class="text-body-md text-on-surface-variant mb-4">Vibrant, mildly sweet and refreshing.</p>
+                    <button class="w-full bg-primary-container text-on-primary font-label-md py-3 rounded-full flex items-center justify-center gap-2 hover:bg-primary transition-colors active:scale-95 duration-150">
+                        <span class="material-symbols-outlined">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="group bg-surface-container-lowest rounded-xl p-stack-sm shadow-[0px_4px_20px_rgba(255,122,0,0.08)] hover:shadow-[0px_8px_30px_rgba(255,122,0,0.15)] transition-all duration-300">
+                <div class="relative overflow-hidden rounded-lg aspect-square mb-4">
+                    <img class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105" alt="Juicy watermelon wedges" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJP4aEA7g7j0rwGE2vRraoxbL9aIEW9ftA8NE-JGTPHqG3h64R9JeoBu4cYDUOW34jZcaRjP314pPk8Kl-zxCm7hDsdkJ5sBREy2r7uY_Xao0eKsi0v9Q7uNuo_s3IGSML9nimok8Td09-TZ5RdYc9jFqbdubuizEBP_LBU5CAwuN-5DbDqw4JDXc92tcKNAlDoY6B3AKv-uMXIeDlgcSDveFBXf4pYKk20Cd8kxn6ByMekNIs1hN025bi9tlgEt6LcJEZwowryg">
+                    <div class="absolute top-2 left-2 bg-on-primary-container/10 text-on-primary-container px-3 py-1 rounded-full flex items-center gap-1 backdrop-blur-md">
+                        <span class="material-symbols-outlined text-[14px]">ac_unit</span>
+                        <span class="text-label-sm font-bold">Chilled Selection</span>
+                    </div>
+                </div>
+                <div class="px-2 pb-2">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="text-headline-md font-headline-md text-on-surface">Ruby Melon</h3>
+                        <span class="text-headline-md font-bold text-primary">$8.00</span>
+                    </div>
+                    <p class="text-body-md text-on-surface-variant mb-4">Extra juicy, locally harvested.</p>
+                    <button class="w-full bg-primary-container text-on-primary font-label-md py-3 rounded-full flex items-center justify-center gap-2 hover:bg-primary transition-colors active:scale-95 duration-150">
+                        <span class="material-symbols-outlined">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="group bg-surface-container-lowest rounded-xl p-stack-sm shadow-[0px_4px_20px_rgba(255,122,0,0.08)] hover:shadow-[0px_8px_30px_rgba(255,122,0,0.15)] transition-all duration-300">
+                <div class="relative overflow-hidden rounded-lg aspect-square mb-4">
+                    <img class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105" alt="Valencia oranges" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoetABa2x6k9kriTlGsHA5fz_9kRejY9KknblKwX2qt4o9TzgKLfRO1iWuEvfLFkaBf3E6NWd_13zjVJGG3rDPjbnnCiZoMj0eW8fqk5OLbccoVTyrndCHqsNW1dtVhAxqhm-JrCxGxtI2d2Z6Fe7qoEf9hiq-gy7izKZCTCXEKAk20xSPPctRMdSpkMLDXlgS_sr3-jn5DRgQpTqsVrOY0Y9akBKmhJza-a7GZmiGP1OgHWkDzc7n-vFT5eUV-IVKRmEAeSQ8yw">
+                </div>
+                <div class="px-2 pb-2">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="text-headline-md font-headline-md text-on-surface">Valencia Orange</h3>
+                        <span class="text-headline-md font-bold text-primary">$3.25</span>
+                    </div>
+                    <p class="text-body-md text-on-surface-variant mb-4">Pack of 4. High juice content.</p>
+                    <button class="w-full bg-primary-container text-on-primary font-label-md py-3 rounded-full flex items-center justify-center gap-2 hover:bg-primary transition-colors active:scale-95 duration-150">
+                        <span class="material-symbols-outlined">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <section class="mt-stack-lg grid md:grid-cols-12 gap-gutter items-center bg-primary-container/10 rounded-3xl p-stack-md md:p-stack-lg overflow-hidden relative">
+            <div class="md:col-span-7 space-y-4 z-10">
+                <span class="inline-block px-4 py-1 bg-secondary-container text-on-secondary-container rounded-full text-label-md font-bold">Limited Offer</span>
+                <h2 class="text-display-lg font-headline-lg text-on-primary-container">Harvest Box of the Month</h2>
+                <p class="text-body-lg text-on-surface-variant">A curated selection of 8-10 seasonal favorites delivered straight to your door. Freshness guaranteed within 24 hours of picking.</p>
+                <div class="pt-4 flex gap-4">
+                    <button class="bg-primary-container text-on-primary px-8 py-3 rounded-full font-label-md hover:shadow-lg transition-shadow active:scale-95">Subscribe & Save 15%</button>
+                    <button class="border-2 border-primary-container text-primary-container px-8 py-3 rounded-full font-label-md hover:bg-primary-container/5 transition-colors">Learn More</button>
+                </div>
+            </div>
+            <div class="md:col-span-5 relative h-64 md:h-full">
+                <div class="absolute -right-20 -top-10 w-full h-full bg-gradient-to-br from-secondary-container/30 to-transparent rounded-full blur-3xl"></div>
+                <img class="absolute inset-0 w-full h-full object-contain drop-shadow-2xl" alt="Wooden crate overflowing with fresh fruits" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA9tGo8ZWA6WXBOa47W-UCfONv0u_m1Mqb9k7W-lErhwP_dL94E0qr-LWPVmGIYOifSdprucQJnOAbkZzrkZaVp1_GubjdO1wPPMTDlXJPDj1Gv1jPemAVgWkc5IU5kIXIjYLK7ybAHKRbqZFRBZqMqNCgMvXoVx4Y1NdzAXmqHneIsUsiSo27gOVm0u-qxEiSr5RbTFSzYXa6KNCQaHrFLSKmHQ7kXHZ5fO74KPoAZfqZ3CQM1q0r6gbU4bd3Q3Mir7Y_ACl7LA">
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between items-center gap-gutter bg-surface-container-highest dark:bg-inverse-surface mt-stack-lg">
+        <div class="flex flex-col items-center md:items-start gap-2">
+            <span class="text-headline-sm font-headline-md text-on-surface">HarvestFresh Markets</span>
+            <p class="text-body-md text-on-surface-variant text-center md:text-left">Bringing the orchard to your doorstep since 2024.</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-6">
+            <a class="text-on-surface-variant font-label-sm hover:text-secondary hover:underline decoration-secondary decoration-2 transition-colors" href="#">Privacy Policy</a>
+            <a class="text-on-surface-variant font-label-sm hover:text-secondary hover:underline decoration-secondary decoration-2 transition-colors" href="#">Terms of Service</a>
+            <a class="text-on-surface-variant font-label-sm hover:text-secondary hover:underline decoration-secondary decoration-2 transition-colors" href="#">Shipping Info</a>
+            <a class="text-on-surface-variant font-label-sm hover:text-secondary hover:underline decoration-secondary decoration-2 transition-colors" href="#">Contact Us</a>
+        </div>
+        <p class="text-label-sm text-on-surface-variant">© 2024 HarvestFresh Markets. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function() {
+                const icon = this.querySelector('.material-symbols-outlined');
+                if (icon && icon.textContent.includes('add_shopping_cart')) {
+                    const originalText = this.innerHTML;
+                    this.innerHTML = '<span class="material-symbols-outlined">check_circle</span> Added!';
+                    this.classList.replace('bg-primary-container', 'bg-secondary');
+                    setTimeout(() => {
+                        this.innerHTML = originalText;
+                        this.classList.replace('bg-secondary', 'bg-primary-container');
+                    }, 2000);
+                }
+            });
+        });
+
+        const searchInput = document.querySelector('input[type="text"]');
+        if(searchInput) {
+            searchInput.addEventListener('focus', () => {
+                searchInput.parentElement.classList.add('shadow-md');
+            });
+            searchInput.addEventListener('blur', () => {
+                searchInput.parentElement.classList.remove('shadow-md');
+            });
+        }
+    </script>
+</body>
+</html>
