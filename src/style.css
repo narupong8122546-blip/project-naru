@@ -1,0 +1,10 @@
+/* Google Material Symbols Configurations */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Custom Component Styles */
+.active-chip {
+    background-color: #ff7a00;
+    color: #ffffff;
+}
